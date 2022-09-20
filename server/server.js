@@ -16,13 +16,15 @@ app.post('/refresh', (req, res) => {
         clientSecret: '84c88e882d624f25b842340bba1d25f0',
         refreshToken
 })
-spotifyApi.refreshAccessToken().then(
-    (data) => {
-      console.log('The access token has been refreshed!');
-  
-      // Save the access token so that it's used in future calls
-      spotifyApi.setAccessToken(data.body['access_token']);
-    }).catch(() => {
+spotifyApi
+.refreshAccessToken()
+.then((data) => {
+      res.json({
+        accessToken: data.body.accessToken,
+        expiresIn: data.body.expiresIn
+      })
+    })
+    .catch(() => {
         res.sendStatus(400)
     })
 })
