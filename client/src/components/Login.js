@@ -11,7 +11,7 @@ import { Container } from 'react-bootstrap';
 // user-library-modify allows uuser to add and remove songs from library.
 // user-read-playback-state allows client to see if user is currently playing a song and what song it is.
 // user-modify-playback-state allows user to play, pause, skip and repeat current track.
-const AUTH_URL = 'https://accounts.spotify.com/authorize?client_id=a097fe731b9c4be48ab93d3d005a07d0&response_type=code&redirect_uri=http://localhost:3000/callback&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state';
+const AUTH_URL = 'https://accounts.spotify.com/authorize?client_id=a097fe731b9c4be48ab93d3d005a07d0&response_type=code&redirect_uri=http://localhost:3000/&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state';
 
 
 // Login function 
