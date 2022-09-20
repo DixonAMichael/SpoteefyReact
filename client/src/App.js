@@ -1,4 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+// imports minified version of bootstrap and ensures styles are being rendered.
+
 import Login from './Login';
 import Dashboard from './Dashboard';
 
