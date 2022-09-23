@@ -6,7 +6,6 @@ import Dashboard from './components/Dashboard';
 
 const code = new URLSearchParams(window.location.search).get('code');
 // gets the URL param 'code='.
-console.log(code);
 
 function App() {
   return code ? <Dashboard code={code} /> : <Login />
